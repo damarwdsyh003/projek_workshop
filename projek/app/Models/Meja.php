@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Meja extends Model
+{
+    use HasFactory;
+
+    protected $table="meja";
+    protected $primaryKey="id_meja";
+    protected $fillable = [
+        'status_meja',
+        'id_tipemeja',
+    ];
+
+    public function tipemeja()
+    {
+        return $this->belongsto('App\Models\Tipemeja', 'id_tipemeja', 'id_tipemeja');
+    }
+}

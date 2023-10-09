@@ -17,11 +17,20 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $table="users";
+    protected $primaryKey="id_users";
     protected $fillable = [
-        'name',
+        'nama',
         'email',
         'password',
+        'no_hp',
+        'id_role',
     ];
+
+    public function role()
+    {
+        return $this->belongsto('App\Models\Role', 'id_role', 'id_role');
+    }
 
     /**
      * The attributes that should be hidden for serialization.

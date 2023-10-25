@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 
 // Route::get('/pemesanan', 'PemesananController@index')->name('pemesanan.index');
 // Route::post('/pemesanan/pesan', 'PemesananController@pesan')->name('pemesanan.pesan');
@@ -62,6 +63,11 @@ Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 Route::get('/halamanlogin', [AuthManager::class, 'halamanlogin'])->name('halamanlogin');
 Route::get('/halamanregister', [AuthManager::class, 'halamanregister'])->name('halamanregister');
 
+// Route::get('/halamanlogin', 'AuthManagerhalamanlogin')->name('halamanlogin');
+// Route::get('/halamanregister', 'AuthManager@halamanregister')->name('halamanregister');
+// Route::post('/login', 'AuthManager@loginPost')->name('login');
+// Route::post('/register', 'AuthManager@registerPost')->name('register');
+// Route::get('/logout', 'AuthManager@logout')->name('logout');
 
 // // Tenant
 // Route::middleware(['auth'])->group(function () {

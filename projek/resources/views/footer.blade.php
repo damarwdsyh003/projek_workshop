@@ -3,16 +3,13 @@
         <div class="row">
             <div class="col-md-4">
                 <h4>Internet Cafe</h4>
-                <p class="text-justify"><i>Kami menyediakan platform yang memudahkan siswa untuk mencatat dan mengatur
-                        jadwal harian mereka, mengelola tugas-tugas sekolah, serta menyimpan catatan penting. Dengan
-                        alat
-                        yang intuitif dan fitur yang kaya, kami membantu siswa mengoptimalkan produktivitas mereka dalam
-                        perjalanan mereka menuju kesuksesan akademik.</i></p>
-                <p><strong>Catat, Atur, Berprestasi: Sukses Akademik dalam Genggamanmu.</strong></p>
+                <p class="text-justify"><i>Kami menyediakan platform yang memudahkan pelanggan untuk memesan tempat
+                        di internet cafe langganan kalian tanpa perlu khawatir tidak mendapatkan tempat.</i></p>
+                <p><strong>Connect, Game, Conquer: Your Digital Playground Awaits!</strong></p>
             </div>
             <div class="col-md-4">
                 <h4>Hubungi Kami</h4>
-                <p class="mb-1"><a href="mailto:studybuddy.dev@gmail.com" class="text-white" style="text-decoration: none;">Email: studybuddy.dev@gmail.com</a></p>
+                <p class="mb-1"><a href="mailto:studybuddy.dev@gmail.com" class="text-white" style="text-decoration: none;">Email: yourinternetcafe@gmail.com</a></p>
                 <p class="mb-0"><a href="tel:(123) 456-7890" class="text-white" style="text-decoration: none;">Telepon: (123) 456-7890</a></p>
             </div>
             <div class="col-md-4">

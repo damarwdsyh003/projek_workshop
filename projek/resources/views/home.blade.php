@@ -1,7 +1,7 @@
 @extends('appUser')
 
 @section('content')
-<img src="assets/img/warnet2.webp" style="width: 100%;">
+<img src="assets/img/warnet2.jpg" style="width: 100%;">
 @endsection
 {{-- <!DOCTYPE html>
 <html lang="en">

@@ -45,7 +45,7 @@
 <body>
 <main>
     <header>
-        <img src="assets/img/unair_horizontal.png" alt="Unair logo">
+        <img src="assets/img/internet-cafe-logo.webp" alt="Unair logo">
     </header>
     @if(session('success'))
         <div>{{ session('success') }}</div>

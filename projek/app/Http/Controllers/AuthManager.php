@@ -54,7 +54,7 @@ class AuthManager extends Controller
             'no_hp' => $request->no_hp,
         ]);
         if(!$user){
-            return redirect(route('halamanregister'))->with("error", "Registration Failed, try again!");
+            return redirect(route('welcome'))->with("error", "Registration Failed, try again!");
         }
         return redirect(route('halamanlogin'))->with( "success", "Registration Success!");
 

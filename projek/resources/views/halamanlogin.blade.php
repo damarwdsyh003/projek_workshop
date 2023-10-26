@@ -41,7 +41,7 @@
 <body>
 <main>
     <header>
-        <img src="assets/img/unair_horizontal.png" alt="Unair logo">
+        <img src="assets/img/internet-cafe-logo.webp" alt="Warnet logo">
     </header>
     <!--TODO 1 : Ubah div menjadi form-->
     @if(session('success'))

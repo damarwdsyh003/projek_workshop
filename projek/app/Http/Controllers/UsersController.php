@@ -31,19 +31,24 @@ class UsersController extends Controller
             'no_hp' => 'required',
         ]);
 
-        $user = User::create([
-            'nama' => $request->nama,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-            'no_hp' => $request->no_hp,
-        ]);
+        User::create($request);
 
-        $token = $user->createToken('authToken')->plainTextToken;
+        return redirect() -> route('halamanlogin');
 
-        return response()->json([
-            'access_token' => $token,
-            'token_type' => 'Bearer',
-        ]);
+        // $user = User::create([
+        //     'nama' => $request->nama,
+        //     'email' => $request->email,
+        //     'password' => Hash::make($request->password),
+        //     'no_hp' => $request->no_hp,
+        //     'id_role' => 1,
+        // ]);
+
+        // $token = $user->createToken('authToken')->plainTextToken;
+
+        // return response()->json([
+        //     'access_token' => $token,
+        //     'token_type' => 'Bearer',
+        // ]);
     }
 
     public function logout(Request $request)

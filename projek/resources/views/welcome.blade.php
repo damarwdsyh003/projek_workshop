@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Home - Append Bootstrap Temlate</title>
+  <title>Internet Cafe</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -63,8 +63,8 @@
       </nav><!-- End Nav Menu -->
 
       <div class="auth-buttons">
-        <a href="{{ route('halamanlogin')}}" class="btn btn-primary">Log In</a>
-        <a href="{{ route('halamanregister')}}" class="btn btn-outline-primary btn-signup">Sign Up</a>
+        <a href="{{ route('halamanlogin')}}" class="btn btn-success">Log In</a>
+        <a href="{{ route('halamanregister')}}" class="btn btn-outline-success btn-signup">Sign Up</a>
         {{-- @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -93,7 +93,7 @@
       <div class="container">
           <div class="col-lg-10">
             <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website!</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Website ini bertujuan untuk mempermudah pelanggan memesan internet cafe langganan anda</p>
+            <p data-aos="fade-up" data-aos-delay="200">Website ini bertujuan untuk mempermudah pelanggan memesan tempat di internet cafe langganan anda</p>
           </div>
           <!-- <div class="col-lg-5">
             <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">

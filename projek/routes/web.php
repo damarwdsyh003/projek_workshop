@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +25,8 @@ Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 // HOME
 // Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 
-// // HOME 2
-// Route::get('/home', [HomeController::class, 'home'])->name('home');
+// HOME 2
+Route::get('/home', [HomeController::class, 'home'])->name('home');
 
 // // MENU
 // Route::get('/menu', [HomeController::class, 'menu'])->name('menu');

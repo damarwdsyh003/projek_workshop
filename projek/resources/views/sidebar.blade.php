@@ -7,12 +7,20 @@
     <hr class="sidebar-divider">
     <ul class="nav flex-column">
         <li class="nav-item">
+            <a class="nav-link btn-success border text-white rounded {{ 'profile' ? 'active' : '' }}"
+                href="#">Profile</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link btn-primary border text-white rounded {{ 'Home' ? 'active' : '' }}"
                 href="{{ route('home') }}">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link btn-success border text-white rounded {{ 'notifikasi' ? 'active' : '' }}"
                 href="#">Notifikasi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link btn-success border text-white rounded {{ 'about' ? 'active' : '' }}"
+                href="#">About</a>
         </li>
     </ul>
     <div style="margin-top: auto; margin-bottom: 400px;"></div>

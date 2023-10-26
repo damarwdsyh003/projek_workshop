@@ -20,7 +20,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link btn-success border text-white rounded {{ 'about' ? 'active' : '' }}"
-                href="#">About</a>
+                href="{{ route('about') }}">About</a>
         </li>
     </ul>
     <div style="margin-top: auto; margin-bottom: 400px;"></div>

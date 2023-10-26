@@ -92,7 +92,7 @@
 
       <div class="container">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website!</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">Connect, Game, Conquer: Your Digital Playground Awaits!</h2>
             <p data-aos="fade-up" data-aos-delay="200">Website ini bertujuan untuk mempermudah pelanggan memesan tempat di internet cafe langganan anda</p>
           </div>
           <!-- <div class="col-lg-5">

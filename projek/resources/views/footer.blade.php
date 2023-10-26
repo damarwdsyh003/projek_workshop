@@ -25,13 +25,13 @@
                         <span class="ml-2">Internet Cafe Official</span>
                     </li>
                     <li class="d-flex align-items-center mb-2">
-                        <a href="https://instagram.com/ghandi.0210" class="btn btn-link btn-social">
+                        <a href="https://instagram.com/damarwdsyh" class="btn btn-link btn-social">
                             <i class="bx bxl-instagram"></i>
                         </a>
                         <span class="ml-2">Developer Muhammad Damar Widyansyah</span>
                     </li>
                     <li class="d-flex align-items-center mb-2">
-                        <a href="https://instagram.com/a.akhsanl" class="btn btn-link btn-social">
+                        <a href="https://instagram.com/muhrafif_a" class="btn btn-link btn-social">
                             <i class="bx bxl-instagram"></i>
                         </a>
                         <span class="ml-2">Defeloper Muhammd Rafif Athallah</span>

@@ -52,7 +52,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/img/logo.png" alt="">
+                        <img src="assets/img/inca.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->

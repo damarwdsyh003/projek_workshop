@@ -60,17 +60,25 @@ Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
 // Route::get('/riwayat', [HomeController::class, 'riwayat'])->name('riwayat');
 
 // LOGIN - REGISTER
-Route::post('/halamanlogin', [AuthManager::class, 'loginPost'])->name('login.post');
-Route::post('/halamanregister', [AuthManager::class, 'registerPost'])->name('register.post');
-Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
-Route::get('/halamanlogin', [AuthManager::class, 'halamanlogin'])->name('halamanlogin');
-Route::get('/halamanregister', [AuthManager::class, 'halamanregister'])->name('halamanregister');
+// Route::post('/halamanlogin', [AuthManager::class, 'loginPost'])->name('login.post');
+// Route::post('/halamanregister', [AuthManager::class, 'registerPost'])->name('register.post');
+// Route::get('/register', 'AuthManager@showRegistrationForm')->name('register');
+// Route::post('/register', 'AuthManager@registerPost')->name('register.post');
+// Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
+// Route::get('/halamanlogin', [AuthManager::class, 'halamanlogin'])->name('halamanlogin');
+// Route::get('/halamanregister', [AuthManager::class, 'halamanregister'])->name('halamanregister');
 
-// Route::get('/halamanlogin', 'AuthManagerhalamanlogin')->name('halamanlogin');
-// Route::get('/halamanregister', 'AuthManager@halamanregister')->name('halamanregister');
-// Route::post('/login', 'AuthManager@loginPost')->name('login');
-// Route::post('/register', 'AuthManager@registerPost')->name('register');
-// Route::get('/logout', 'AuthManager@logout')->name('logout');
+// Route::get('/halamanlogin', [AuthManager::class, 'halamanlogin'])->name('halamanlogin');
+// Route::get('/halamanregister', [AuthManager::class, 'halamanregister'])->name('halamanregister');
+// Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
+// Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post');
+// Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
+
+Route::get('/login', [AuthManager::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthManager::class, 'login'])->name('login.post');
+Route::get('/register', [AuthManager::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [AuthManager::class, 'register'])->name('register.post');
+Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 // // Tenant
 // Route::middleware(['auth'])->group(function () {

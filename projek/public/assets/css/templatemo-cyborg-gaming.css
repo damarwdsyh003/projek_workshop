@@ -91,7 +91,7 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-	color: rgb(28, 161, 61)153, 255, 179);
+	color: rgb(28, 161, 61)153, 255, 179;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -856,11 +856,11 @@ Most Popular Style
 }
 
 .most-popular .item ul li:first-child i {
-  color: yellow;
+  color: rgb(0, 255, 242);
 }
 
 .most-popular .item ul li:last-child i {
-  color: #ec6090;
+  color: #278527;
 }
 
 .most-popular .main-button {
@@ -953,7 +953,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: #ec6090;
+  color: #278527;
 }
 
 /* 
@@ -992,7 +992,7 @@ Featured Games Style
 .featured-games .item .thumb .hover-effect h6 {
   background-color: rgba(31,33,34,0.95);
   display: inline-block;
-  color: #ec6090;
+  color: #278527;
   font-weight: 600;
   font-size: 14px;
   padding: 10px 20px;
@@ -1029,11 +1029,11 @@ Featured Games Style
 }
 
 .featured-games .item ul li:first-child i {
-  color: yellow;
+  color: rgb(0, 255, 242);
 }
 
 .featured-games .item ul li:last-child i {
-  color: #ec6090;
+  color: #278527;
 }
 
 .featured-games .owl-nav {
@@ -1063,7 +1063,7 @@ Featured Games Style
 .featured-games .owl-nav .owl-prev span:hover,
 .featured-games .owl-nav .owl-next span:hover {
   opacity: 1;
-  color: #ec6090;
+  color: #278527;
 }
 
 .top-downloaded {
@@ -1113,7 +1113,7 @@ Featured Games Style
   height: 46px;
   text-align: center;
   line-height: 46px;
-  color: #ec6090;
+  color: #278527;
   background-color: #27292a;
   border-radius: 50%;
 }
@@ -1204,7 +1204,7 @@ Live Stream Style
 
 .live-stream .hover-effect .live a { 
   position: absolute;
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: rgba(10, 117, 15, 0.9);
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;

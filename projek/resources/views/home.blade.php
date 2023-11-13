@@ -56,19 +56,19 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
-                    <div class="search-input">
+                    {{-- <div class="search-input">
                       <form id="search" action="#">
                         <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                         <i class="fa fa-search"></i>
                       </form>
-                    </div>
+                    </div> --}}
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="browse.html">About</a></li>
+                        <li><a href="details.html">Facilities</a></li>
+                        <li><a href="streams.html">Reservation</a></li>
                         <li><a href="profile.html">Profile <img src="assets/img/profile-header.jpg" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
@@ -92,11 +92,11 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="row">
               <div class="col-lg-7">
                 <div class="header-text">
-                  <h6>Welcome To Cyborg</h6>
-                  <h4><em>Browse</em> Our Popular Games Here</h4>
-                  <div class="main-button">
+                  <h6>Welcome To InCa</h6>
+                  <h4><em>Your</em> Digital Playground Here</h4>
+                  {{-- <div class="main-button">
                     <a href="browse.html">Browse Now</a>
-                  </div>
+                  </div> --}}
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ https://templatemo.com/tm-579-cyborg-gaming
           <!-- ***** Banner End ***** -->
 
           <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
+          {{-- <div class="most-popular">
             <div class="row">
               <div class="col-lg-12">
                 <div class="heading-section">
@@ -205,11 +205,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                 </div>
               </div>
             </div>
-          </div>
+          </div> --}}
           <!-- ***** Most Popular End ***** -->
 
           <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
+          {{-- <div class="gaming-library">
             <div class="col-lg-12">
               <div class="heading-section">
                 <h4><em>Your Gaming</em> Library</h4>
@@ -250,14 +250,14 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <a href="profile.html">View Your Library</a>
               </div>
             </div>
-          </div>
+          </div> --}}
           <!-- ***** Gaming Library End ***** -->
         </div>
       </div>
     </div>
   </div>
   
-  <footer>
+  {{-- <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -267,7 +267,7 @@ https://templatemo.com/tm-579-cyborg-gaming
         </div>
       </div>
     </div>
-  </footer>
+  </footer> --}}
 
 
   <!-- Scripts -->

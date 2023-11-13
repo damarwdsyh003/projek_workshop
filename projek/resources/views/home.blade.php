@@ -66,11 +66,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">About</a></li>
-                        <li><a href="details.html">Facilities</a></li>
-                        <li><a href="streams.html">Reservation</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/img/profile-header.jpg" alt=""></a></li>
-                    </ul>   
+                        <li><a href="{{ route('about')}}">About</a></li>
+                        <li><a href="{{ route('facilities')}}">Facilities</a></li>
+                        <li><a href="{{ route('reservation')}}">Reservation</a></li>
+                        <li><<a href="{{ route('profile')}}">Profile <img src="assets/img/profile-header.jpg" alt=""></a></li>
+                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -256,13 +256,13 @@ https://templatemo.com/tm-579-cyborg-gaming
       </div>
     </div>
   </div>
-  
+
   {{-- <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
+
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
       </div>

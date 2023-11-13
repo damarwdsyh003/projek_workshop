@@ -26,8 +26,9 @@ class HomeController extends Controller
         return view('facilities');
     }
 
-    public function history()
+    public function reservation()
     {
-        return view('history');
+        return view('reservation');
     }
+
 }

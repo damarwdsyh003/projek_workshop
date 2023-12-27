@@ -31,12 +31,9 @@ Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 // Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 
 // Pemesanan routes
-Route::get('/pemesanan', [PemesananController::class, 'index'])->name('pemesanan.index');
-Route::get('/pemesanan/create', [PemesananController::class, 'create'])->name('pemesanan.create');
-Route::post('/pemesanan/store', [PemesananController::class, 'store'])->name('pemesanan.store');
-Route::get('/pemesanan/{id}/edit', [PemesananController::class, 'edit'])->name('pemesanan.edit');
-Route::put('/pemesanan/{id}/update', [PemesananController::class, 'update'])->name('pemesanan.update');
-Route::delete('/pemesanan/{id}/destroy', [PemesananController::class, 'destroy'])->name('pemesanan.destroy');
+Route::get('/pemesanan', [PemesananController::class, 'index']);
+Route::get('/pemesanan/create', [PemesananController::class, 'create']);
+Route::post('/pemesanan', [PemesananController::class, 'store'])->name('store');
 
 // HOME 2
 Route::get('/home', [HomeController::class, 'home'])->name('home');

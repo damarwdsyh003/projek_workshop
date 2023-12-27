@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Paket;
+use App\Models\Meja;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class HomeController extends Controller
 {
@@ -28,7 +31,13 @@ class HomeController extends Controller
 
     public function reservation()
     {
-        return view('reservation');
+        $pakets = Paket::all();
+        $mejas = Meja::all();
+
+        return view('reservation',[
+            'pakets' => $pakets,
+            'mejas' => $mejas        
+        ]);
     }
 
 }

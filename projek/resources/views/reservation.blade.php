@@ -13,11 +13,11 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/pemesanan.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="{{ ('assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ ('assets/css/templatemo-cyborg-gaming.css') }}">
+    <link rel="stylesheet" href="{{ ('assets/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ ('assets/css/pemesanan.css') }}">
+    <link rel="stylesheet" href="{{ ('assets/css/animate.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <!--
 
@@ -82,30 +82,30 @@ https://templatemo.com/tm-579-cyborg-gaming
                               <div class="heading-section">
                                   <h4><em>Make Your</em> Reservation</h4>
                               </div>
-                              <form action="{{ route('pemesanan.store') }}" method="POST">
-                                  @csrf
-
-                                  <label for="package">Package:</label>
-                                  <select name="id_paket" id="id_paket" required>
-                                      @foreach($pakets as $paket)
-                                      <option value="{{ $paket->id_paket }}">{{ $paket->nama_paket }}</option>
-                                      @endforeach
-                                  </select>
-
-                                  <br>
-
-                                  <label for="table_number">Table Number:</label>
-                                  <input type="number" name="id_meja" id="id_meja" min="1" max="10" required>
-
-                                  <br>
-
-                                  <label for="order_date">Order Date:</label>
-                                  <input type="date" name="tanggal_pemesanan" id="tanggal_pemesanan" required>
-
-                                  <br>
-
-                                  <input type="submit" value="Submit">
-                              </form>
+                              <form action="{{ route('store') }}" method="POST">
+                                @csrf
+                            
+                                <label for="package">Package:</label>
+                                <select name="package" id="package" required>
+                                    @foreach($pakets as $paket)
+                                        <option value="{{ $paket->id_paket }}">{{ $paket->nama_paket }}</option>
+                                    @endforeach
+                                </select>
+                            
+                                <br>
+                            
+                                <label for="table_number">Table Number:</label>
+                                <input type="number" name="table_number" id="table_number" min="1" max="10" required>
+                            
+                                <br>
+                            
+                                <label for="order_date">Order Date:</label>
+                                <input type="date" name="order_date" id="order_date" required>
+                            
+                                <br>
+                            
+                                <input type="submit" value="Submit">
+                            </form>
                           </div>
                       </div>
                   </div>

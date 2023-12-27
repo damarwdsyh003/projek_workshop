@@ -1,7 +1,3 @@
-@extends('appUser')
-
-@section('content')
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Cyborg - Awesome HTML5 Template</title>
+    <title>Internet Cafe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,18 +43,15 @@ https://templatemo.com/tm-579-cyborg-gaming
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  {{-- <header class="header-area header-sticky">
+  <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a> --}}
+                        <img src="assets/img/inca.png" alt="">
+                    </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
                     {{-- <div class="search-input">
@@ -69,23 +62,22 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </div> --}}
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
-                    {{-- <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html" class="active">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
+                    <ul class="nav">
+                        <li><a href="{{ route('home')}}">Home</a></li>
+                        <li><a href="{{ route('about')}}" class="active">About</a></li>
+                        <li><a href="{{ route('facilities')}}">Facilities</a></li>
+                        <li><a href="{{ route('reservation')}}">Reservation</a></li>
+                        <li><a href="{{ route('profile')}}">Profile <img src="assets/img/profile-header.jpg" alt=""></a></li>
+                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
-                    </a> --}}
+                    </a>
                     <!-- ***** Menu End ***** -->
-                {{-- </nav>
+                </nav>
             </div>
         </div>
     </div>
-  </header> --}}
-  <!-- ***** Header Area End ***** -->
+  </header>
 
   <div class="container">
     <div class="row">
@@ -243,13 +235,13 @@ https://templatemo.com/tm-579-cyborg-gaming
       </div>
     </div>
   </div>
-  
+
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
+
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
       </div>
@@ -273,7 +265,6 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 </html>
 
-@endsection
 {{-- <!DOCTYPE html>
 <html lang="en">
 <head>

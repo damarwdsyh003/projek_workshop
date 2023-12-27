@@ -65,7 +65,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="{{ route('home')}}" class="active">Home</a></li>
                         <li><a href="{{ route('about')}}">About</a></li>
                         <li><a href="{{ route('facilities')}}">Facilities</a></li>
                         <li><a href="{{ route('reservation')}}">Reservation</a></li>

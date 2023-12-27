@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('meja', function (Blueprint $table) {
             $table->BigIncrements('id_meja');
-            $table->unsignedBigInteger('id_tipemeja');
             $table->boolean('status_meja');
             $table->timestamps();
 
-            $table->foreign('id_tipemeja')->references('id_tipemeja')->on('tipemeja');
+            
         });
     }
 

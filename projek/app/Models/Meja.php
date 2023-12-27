@@ -13,11 +13,5 @@ class Meja extends Model
     protected $primaryKey="id_meja";
     protected $fillable = [
         'status_meja',
-        'id_tipemeja',
     ];
-
-    public function tipemeja()
-    {
-        return $this->belongsto('App\Models\Tipemeja', 'id_tipemeja', 'id_tipemeja');
-    }
 }

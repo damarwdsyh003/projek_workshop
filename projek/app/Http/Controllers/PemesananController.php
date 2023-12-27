@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pemesanan;
 use App\Models\Paket;
+use App\Models\Pemesanan;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class PemesananController extends Controller
 {
@@ -19,25 +20,35 @@ class PemesananController extends Controller
     {
         $pakets = Paket::all();
 
-        return view('reservation',['pakets' => $pakets]);
+        return view('reservation', ['pakets' => $pakets]);
     }
 
     public function store(Request $request)
     {
-        $data = $request->all();
+        // Ensure the user is authenticated
+        // if (auth()->check()) {
+            // Get the authenticated user's ID
+            $userId = auth()->id();
 
-        $pemesanan = new Pemesanan();
-        $pemesanan->id_users = $data['id_users'];
-        $pemesanan->id_meja = $data['id_meja'];
-        $pemesanan->id_paket = $data['id_paket'];
-        $pemesanan->tanggal_pemesanan = $data['tanggal_pemesanan'];
-        $pemesanan->waktu_pemesanan = $data['waktu_pemesanan'];
-        $pemesanan->jumlah_tamu = $data['jumlah_tamu'];
-        $pemesanan->total_harga = $data['total_harga'];
-        $pemesanan->status_pemesanan = 'belum_dikonfirmasi';
+            $data = $request->all();
 
-        $pemesanan->save();
+            $pemesanan = new Pemesanan();
+            $pemesanan->id_users = $userId; // Use the authenticated user's ID
+            $pemesanan->id_meja = $data['table'];
+            $pemesanan->id_paket = $data['package'];
+            $pemesanan->tgl_pemesanan = $data['order_date'];
+            // $pemesanan->waktu_pemesanan = $data['order_time']; // Assuming you have an 'order_time' field
+            // $pemesanan->jumlah_tamu = $data['number_of_guests']; // Assuming you have a 'number_of_guests' field
+            // $pemesanan->total_harga = $data['total_price']; // Assuming you have a 'total_price' field
+            // $pemesanan->status_pemesanan = 'belum_dikonfirmasi';
 
-        return redirect()->route('reservation');
+            $pemesanan->save();
+
+            return redirect()->route('reservation');
+        // } else {
+            // Handle the case where the user is not authenticated
+            // You may want to redirect them to the login page or show an error message
+        //     return redirect()->route('login');
+        // }
     }
 }

@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\UsersController;
+use App\Http\Controllers\PaketController;
+use App\Http\Controllers\PemesananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,12 +19,24 @@ use App\Http\Controllers\UsersController;
 */
 
 Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
+// Route::get('/reservation', [PemesananController::class, 'showReservationForm'])->name('reservation.form');
+// Route::post('/store', [PemesananController::class, 'store'])->name('reservation.store');
 
 // Route::get('/pemesanan', 'PemesananController@index')->name('pemesanan.index');
 // Route::post('/pemesanan/pesan', 'PemesananController@pesan')->name('pemesanan.pesan');
 
+// Route::get('/show-package-names', [PaketController::class, 'showPackageNames']);
+
 // HOME
 // Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
+
+// Pemesanan routes
+Route::get('/pemesanan', [PemesananController::class, 'index'])->name('pemesanan.index');
+Route::get('/pemesanan/create', [PemesananController::class, 'create'])->name('pemesanan.create');
+Route::post('/pemesanan/store', [PemesananController::class, 'store'])->name('pemesanan.store');
+Route::get('/pemesanan/{id}/edit', [PemesananController::class, 'edit'])->name('pemesanan.edit');
+Route::put('/pemesanan/{id}/update', [PemesananController::class, 'update'])->name('pemesanan.update');
+Route::delete('/pemesanan/{id}/destroy', [PemesananController::class, 'destroy'])->name('pemesanan.destroy');
 
 // HOME 2
 Route::get('/home', [HomeController::class, 'home'])->name('home');

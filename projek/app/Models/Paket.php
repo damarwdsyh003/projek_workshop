@@ -17,8 +17,8 @@ class Paket extends Model
         'id_meja',
     ];
 
-    public function meja()
+    public function tipemeja()
     {
-        return $this->belongsto('App\Models\Meja', 'id_meja', 'id_meja');
+        return $this->belongsto('App\Models\Tipemeja', 'id_tipemeja', 'id_tipemeja');
     }
 }

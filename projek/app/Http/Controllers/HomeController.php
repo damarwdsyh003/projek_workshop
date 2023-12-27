@@ -36,8 +36,11 @@ class HomeController extends Controller
 
         return view('reservation',[
             'pakets' => $pakets,
-            'mejas' => $mejas        
+            'mejas' => $mejas
         ]);
     }
-
+    public function profile()
+    {
+        return view('profile');
+    }
 }

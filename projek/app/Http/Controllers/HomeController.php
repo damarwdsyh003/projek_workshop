@@ -43,4 +43,8 @@ class HomeController extends Controller
     {
         return view('profile');
     }
+    public function pembayaran()
+    {
+        return view('pembayaran');
+    }
 }

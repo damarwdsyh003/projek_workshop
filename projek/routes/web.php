@@ -41,6 +41,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
 Route::get('/facilities', [HomeController::class, 'facilities'])->name('facilities');
 Route::get('/reservation', [HomeController::class, 'reservation'])->name('reservation');
+Route::get('/pembayaran', [HomeController::class, 'pembayaran'])->name('pembayaran');
 // // MENU
 // Route::get('/menu', [HomeController::class, 'menu'])->name('menu');
 

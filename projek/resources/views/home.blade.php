@@ -69,6 +69,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                         <li><a href="{{ route('about')}}">About</a></li>
                         <li><a href="{{ route('facilities')}}">Facilities</a></li>
                         <li><a href="{{ route('reservation')}}">Reservation</a></li>
+                        <li><a href="{{ route('logout')}}">Logout</a></li>
                         <li><a href="{{ route('profile')}}">Profile <img src="assets/img/profile-header.jpg" alt=""></a></li>
                     </ul>
                     <a class='menu-trigger'>
